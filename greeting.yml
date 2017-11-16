@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+   greeting: "Please specify your message"
+
+  tasks:
+   - name: output a message
+     debug: msg="{{greeting}}"
